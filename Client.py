@@ -1,5 +1,6 @@
 import socket
 import random
+from art import text2art
 from threading import Thread
 from datetime import datetime
 from colorama import Fore, init
@@ -32,6 +33,8 @@ s.connect((SERVER_HOST, SERVER_PORT))
 print("[+] Connected.")
 # prompt the client for a name
 name = input("Enter Your Name: ")
+a=text2art("Krizzz chat-server")
+print(a)
 # send the name to the server
 s.send(name.encode())
 
